@@ -80,7 +80,7 @@ func print(questions chan string, answers chan string) {
 	for ans := range answers {
 		for _, ch := range ans {
 			fmt.Print(string(ch))
-			time.Sleep(30 * time.Millisecond)
+			time.Sleep(60 * time.Millisecond)
 		}
 		fmt.Print("\n> ")
 	}
